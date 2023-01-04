@@ -1,0 +1,144 @@
+
+# /*------------------------------------------------------------------------------
+ 
+#  This source is part of the Tech Plus Solution Co., Ltd.
+#  Copyright  2018-2019, Tech Plus Solution and/or its affiliates. All rights reserved.
+ 
+#  No part of this work may be reproduced, stored in a retrieval system,
+#  adopted or transmitted in any form or by any means, electronic, mechanical,
+#  photographic, graphic, optic recording or otherwise, translated in any language
+#  or computer language, without the prior written permission of Tech Plus Solution and/or its affiliates.
+ 
+#  Tech Plus Solution Co., Ltd.
+#  #5C, 203 ,Dagonlwin Street
+#  Myittar Nyunt, Tamwe Township,
+#  Yangon,
+#  Myanmar.
+ 
+#  Modification History
+ 
+#  Date        Version        Author               Description
+#  ----------  -----------    ---------------      ----------------------------------------
+# 30/04/2021   1.0            Min Aung Hein        Initial Version
+
+# -----------------------------------------------------------------------------------*/
+name: getxstandard
+description: TPS Standard App Template with GetX.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+
+# dependency_overrides:
+#   # firebase_core: 0.4.4
+#   firebase_core: 1.1.0 
+#   intl: 
+
+dependencies:
+  flutter:
+    sdk: flutter
+    
+  #WARNING !!!! Remove unused package to unused session in last sectioin
+  #Built in Packages
+  cupertino_icons: ^1.0.2
+
+  # #Statemanagement Packages
+  get: ^4.6.5    
+
+  # Networking Packages
+  http:
+  dio: ^4.0.6  #TODO:May not use  ( Choose http or dio )             
+  connectivity: ^3.0.6    
+  
+  #Image Packages
+  cached_network_image: ^3.2.1 
+  carousel_slider: ^4.2.1  
+  photo_view: ^0.14.0 
+ 
+  #Permission Packages
+  permission_handler: ^10.2.0
+  app_settings: ^4.1.6
+
+  #Location Packages
+  google_maps_flutter: ^2.2.3
+  geolocator: ^9.0.2  
+  flutter_polyline_points: any #TODO: May choose other package
+  
+  #Firebase & Push Notification Packages
+  firebase_messaging: ^14.2.1  #Delete Podfile/.lock and run flutter clean and rerun solve issue
+  firebase_auth: ^4.2.4
+  firebase_analytics: ^10.1.0 #TODO: May not used
+  flutter_app_badger: ^1.5.0
+ 
+ 
+  #Formatting Packages
+  # flutter_money_formatter: ^0.8.3
+
+  #Localization Packages
+  intl:    
+
+  #Security Packages
+  imei_plugin: "1.2.0" 
+  
+  #Local Storage Packages 
+  shared_preferences: ^2.0.15
+  path_provider: ^2.0.11
+  
+  #SMSToken Packages
+  focus_detector: ^2.0.1
+  sms_autofill: ^2.2.0
+
+  #Unused/Future Used Package
+  # location: ^2.3.5   
+  # uni_links: "0.5.1" #Deeplinking  
+  # flutter_slidable: "0.6.0"  #TODO: May not used
+  # toast: "0.1.5"  #TODO: May not used
+  # smooth_star_rating: 1.0.3 #TODO: May not used
+  # flutter_swiper : "1.1.6"   #onBoarding  
+ 
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
